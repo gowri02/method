@@ -1,0 +1,48 @@
+#deleting elements from a dictionary.
+def py_dict(a):
+    print
+    val=input("enter the key to be deleted: ")
+    if val in a.keys():
+        del a[val]
+    else:
+        print("key not present..")
+n = int(input("enter a n value:"))
+dic = {}
+
+for i in range(n):
+    keys = input(f'enter key{i+1}: ') # here i have taken keys as strings
+    values = int(input(f'enter value: ')) # here i have taken values as integers
+    dic[keys] = values
+print("originl dictionary: ")    
+print(dic)
+py_dict(dic)
+print("final dictionary: ")
+print(dic)
+
+
+
+
+#accessing elements from a tuple
+def py_tuple(a):
+    i=int(input("enter the position: "))
+    if i<=len(a):
+        print(a[i-1])
+    else:
+        print("out of range!")
+lst=[]
+py_lists(lst)
+tup=tuple(lst)
+py_tuple(tup)
+print(tup)
+
+
+
+#assigning values to a list
+def py_lists(a):
+    n=int(input("enter the number of elements: "))
+    for i in range(n):
+        val=(input(f'val{i+1}: '))
+        a.append(val)
+lst=[]
+py_lists(lst)
+print(lst)
